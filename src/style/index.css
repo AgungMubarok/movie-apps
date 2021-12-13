@@ -1,0 +1,49 @@
+.animate-detail {
+  cursor: pointer;
+  position: relative;
+}
+
+.bg-unique {
+  background: orange;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 500ms;
+}
+
+.bg-unique-show {
+  transform: scale(1);
+}
+
+.bg-unique-hide {
+  transform: scale(0);
+}
+
+.transition-fav {
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 500ms;
+  /* animation: spin 5s; */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.checked {
+  color: orange;
+  animation: spin 0.5s;
+}
